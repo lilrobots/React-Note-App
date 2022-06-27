@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #0b2434;
+	height: 100vh;
+	padding-top: 100px;
+	font-family: Karla, sans-serif;
+	color: #2b283a;
+}
+
+main {
+	background: #f5f5f5;
+	width: clamp(300px, 50%, 600px);
+	max-height: 500px;
+	padding: 2rem;
+	border-radius: 10px;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2.5rem;
+	letter-spacing: -0.03em;
+}
+
+.rules {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 16px;
+	letter-spacing: -0.03em;
+	color: #4a4e74;
+	text-align: center;
+	width: 80%;
+}
+
+.dice-container {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 18px;
+}
+
+.die {
+	font-size: 2rem;
+	font-weight: 700;
+	background: #ffffff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	width: 40px;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.die > img {
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+.held {
+	background: #59e391;
+}
+
+.roll {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: white;
+	padding: 0.3em 1.2em;
+	border: none;
+	background: #5035ff;
+	box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.roll:active {
+	box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.score {
+	font-size: 0.8rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.score > div > p {
+	margin-top: 8px;
+}
+
+.time-score {
+	text-align: right;
+}
